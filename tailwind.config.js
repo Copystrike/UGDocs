@@ -1,11 +1,4 @@
 module.exports = {
-<<<<<<< HEAD
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
-=======
   mode: "jit",
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -34,7 +27,6 @@ module.exports = {
       minHeight: (theme) => theme("height"),
       maxHeight: (theme) => theme("height"),
     },
->>>>>>> main
   },
   plugins: [],
 }

@@ -8,8 +8,6 @@
 # testing
 /coverage
 
-<<<<<<< HEAD
-=======
 # Enviroments
 *.env.*
 !.env.example
@@ -18,14 +16,11 @@
 /.next/
 /out/
 
->>>>>>> main
 # production
 /build
 
 # misc
 .DS_Store
-<<<<<<< HEAD
-=======
 *.pem
 
 # debug
@@ -34,20 +29,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
->>>>>>> main
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-<<<<<<< HEAD
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-=======
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
->>>>>>> main
