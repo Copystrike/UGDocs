@@ -4,17 +4,39 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+<<<<<<< HEAD
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+=======
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+>>>>>>> main
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+<<<<<<< HEAD
     "noEmit": true,
     "jsx": "react-jsx"
   },
   "include": ["src", "src/test"]
+=======
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/libs/components/*"],
+      "@/hooks/*": ["src/libs/hooks/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/libs/*": ["src/libs/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+>>>>>>> main
 }
