@@ -19,14 +19,14 @@ export const Notification = (props: MyProps) => {
     })
 
     function closeNotification() {
-        // localStorage.setItem("closed-notification", version); 
+        localStorage.setItem("closed-notification", version); 
         setShow(false);
     }
 
     return (
         <div className={show ? '' : 'hidden'}>
-            <div className="bg-slate-100 min-h-10 flex justify-center items-center p-2">
-                <div className="font-light mx-2 text-center lg:text-left">
+            <div className="flex items-center justify-center p-2 bg-slate-100 min-h-10">
+                <div className="mx-2 font-light text-center lg:text-left">
                     <p><span className="font-bold">{props.title} </span>{props.message}</p>
                 </div>
 
