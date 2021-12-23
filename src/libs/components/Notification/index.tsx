@@ -1,5 +1,5 @@
 import React from "react";
-import { useMountEffect } from "../../hook/useMountEffect";
+import { useMountEffect } from "@/hooks/useMountEffect";
 
 type MyProps = {
     title: string;

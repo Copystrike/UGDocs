@@ -1,8 +1,0 @@
-@tailwind base;
-
-#root {
-  @apply min-h-screen
-}
-
-@tailwind components;
-@tailwind utilities;
