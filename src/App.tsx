@@ -17,13 +17,27 @@ function App() {
         <p className='text-sm font-thin'>Click the button underneath to create a new google docs.</p>
         <button className='px-4 py-2 my-5 font-bold text-white bg-gray-500 rounded hover:bg-gray-700'>Create new google docs</button>
       </div>
-      <h1 className='text-xl font-medium text-center'>Last accessed files</h1>
-      <div className='my-3'>
-        <Documents />
-      </div>
+      <DocumentBody />
       <Footer />
     </div >
   );
+}
+
+const DocumentBody = () => {
+
+  if (process.env.NODE_ENV === 'development') {
+
+    return (
+      <div>
+        <h1 className='text-xl font-medium text-center'>Last accessed files</h1>
+        <div className='my-3'>
+          <Documents />
+        </div>
+      </div>
+    )
+  }
+
+  return (<></>)
 }
 
 export default App;
