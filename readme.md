@@ -1,6 +1,7 @@
 # `UGDocs`
 
 
+Stable release: <br/>
 ![TeamCity build status](https://teamcity.copystrike.dev/app/rest/builds/buildType:id:UGDocs_Deploy/statusIcon.svg)
 
 UGDocs stands for Unauthenticated Google Docs.<br>
