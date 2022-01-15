@@ -1,21 +1,24 @@
 # `UGDocs`
 
+
+![TeamCity build status](https://teamcity.copystrike.dev/app/rest/builds/buildType:id:UGDocs_Deploy/statusIcon.svg)
+
 UGDocs stands for Unauthenticated Google Docs.<br>
 
-Simpely this projects allows you to create a google docs without being authenticated... Wel not really, when setting up this project you will have to give this app permissions to your account.
+Simpely this projects allows you to create a google docs without being authenticated... Wel not really, when setting up this project you will need to have access to a google account to give this app permissions, to create google documents on your behalf.
 
 ## Motivation
 
-So my motivation to create this project is because at my school it is such a frustration to access my google account and without access to my google account you cant create new documents or view any that you created.
+So my motivation to create this project is because at my school it is such a frustration to access my google account and without access to my google account you cannot create new google documents or view any that you created.
 
 ## Goal
 
-My goal is to make a website that I can host, there I can create documents and see all documents. The most important goal I want to do first is creating a document anything after that is not that important so I will see how far I will get.
+The most important goal I want to do achive is creating google document from everywhere without being authenticated, anything after that is not that important so I will see how far I will get with this project.
 
 
 ## WARNING
 
-The documents created are publicaly accessible to anyone and anyone can edit them if they have the link. Since this is the only way to give yourself when unauthenticated edit/view permissions.
+The documents created by this project are publicaly accessible to anyone with the link and can be modified and shared across many others. This is because its the only way to give yourself when unauthenticated edit/view permissions.
 
 
 ## Instructions
