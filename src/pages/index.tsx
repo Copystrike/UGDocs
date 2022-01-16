@@ -51,10 +51,7 @@ const Home: NextPage = () => {
             ) : <p>Create new google docs</p>}
           </button>
         </div>
-        <h1 className='text-xl font-medium text-center'>Last modified documents</h1>
-        <div className='my-3'>
-          <Documents />
-        </div>
+        <DocumentListSection />
       </div>
 
       <div className='py-3 grow-0 bg-slate-100'>
@@ -62,6 +59,21 @@ const Home: NextPage = () => {
       </div>
     </div >
   )
+}
+
+const DocumentListSection = () => {
+
+  if (process.env.NODE_ENV === 'development') {
+    return (
+      <>
+        <h1 className='text-xl font-medium text-center'>Last modified documents</h1>
+        <div className='my-3'>
+          <Documents />
+        </div>
+      </>
+    )
+  }
+  return (<></>)
 }
 
 export default Home
