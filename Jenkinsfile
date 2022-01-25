@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('deploy') {
             steps {
-                echo 'hello'
+                echo 'Hello, devops!'
             }
         }
     }
