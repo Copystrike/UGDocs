@@ -5,8 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Building...'
-                sh "echo ${version}"
+                echo 'Building version ${version...'
                 sh "docker build -t docker.copystrike.dev/ugdocs:${version} -t docker.copystrike.dev/ugdocs:latest ."
             }
         }
