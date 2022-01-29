@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        VERSIONFORMAT = '1.0.${BUILD_NUMBER}'
+        VERSION_FORMAT = '1.0.$BUILD_NUMBER'
     }
 
     stages {
@@ -10,14 +10,14 @@ pipeline {
             steps {
                 script {
                     echo 'Building...'
-                    sh 'docker build -t docker.copystrike.dev/ugdocs:$BUILD_NUMBER -t docker.copystrike.dev/ugdocs:latest .'
+                    sh 'docker build -t docker.copystrike.dev/ugdocs:${VERSION_FORMAT} -t docker.copystrike.dev/ugdocs:latest .'
                 }
             }
         }
         stage('deploy') {
             steps {
                 echo 'Pushing to docker.copystrike.dev...'
-                sh 'docker push docker.copystrike.dev/ugdocs:$TAG'
+                sh 'docker push docker.copystrike.dev/ugdocs:${VERSION_FORMAT}'
                 sh 'docker push docker.copystrike.dev/ugdocs:latest'
             }
         }
