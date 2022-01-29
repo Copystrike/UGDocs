@@ -5,8 +5,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building...'
-                    TAG = "$BUILD_NUMBER"
-                    sh 'docker build -t docker.copystrike.dev/ugdocs:$TAG -t docker.copystrike.dev/ugdocs:latest .'
+                    sh 'docker build -t docker.copystrike.dev/ugdocs:$BUILD_NUMBER -t docker.copystrike.dev/ugdocs:latest .'
                 }
             }
         }
