@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('deploy') {
             steps {
-                sh 'yarn version'
+                sh 'yarn -version'
             }
         }
     }
