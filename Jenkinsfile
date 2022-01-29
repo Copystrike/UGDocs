@@ -16,7 +16,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                echo 'Pushing to docker.copystrike.dev...'
+                echo 'Pushing to private registry docker.copystrike.dev...'
                 sh 'docker push docker.copystrike.dev/ugdocs:${VERSION_FORMAT}'
                 sh 'docker push docker.copystrike.dev/ugdocs:latest'
             }
