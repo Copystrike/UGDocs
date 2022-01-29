@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    environment {
+        VERSIONFORMAT = '1.0.${BUILD_NUMBER}'
+    }
+
     stages {
         stage('build') {
             steps {
