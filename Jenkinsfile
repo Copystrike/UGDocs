@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        VERSION_FORMAT = '1.0.$BUILD_NUMBER'
+        VERSION_FORMAT = '1.0.${BUILD_NUMBER}'
     }
 
     stages {
