@@ -5,8 +5,8 @@ pipeline {
             steps {
                 script {
                     echo 'Building...'
-                    TAG = VersionNumber(versionNumberString: '${BUILD_DATE_FORMATTED, "yyyy"}-dev-${BUILDS_ALL_TIME}')
-                    sh 'docker build -t docker.copystrike.dev/ugdocs:$TAG -t docker.copystrike.dev/ugdocs:latest .'
+                    // TAG = VersionNumber(versionNumberString: '${BUILD_DATE_FORMATTED, "yyyy"}-dev-${BUILDS_ALL_TIME}')
+                    sh 'docker build -t docker.copystrike.dev/ugdocs:1.0 -t docker.copystrike.dev/ugdocs:latest .'
                 }
             }
         }
