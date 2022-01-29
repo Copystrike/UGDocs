@@ -1,9 +1,7 @@
+def VERSION_FORMAT='1.0.${BUILD_NUMBER}'
+
 pipeline {
     agent any
-
-    environment {
-        VERSION_FORMAT = '1.0.${BUILD_NUMBER}'
-    }
 
     stages {
         stage('build') {
