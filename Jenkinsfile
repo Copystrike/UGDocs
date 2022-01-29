@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('deploy') {
             steps {
-                sh 'echo "Hello World"'
+                sh 'yarn version'
             }
         }
     }
