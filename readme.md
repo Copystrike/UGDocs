@@ -1,7 +1,7 @@
 # `UGDocs`
 
+[![Build Status](https://jenkins.copystrike.dev/job/ugdocs-pipe/badge/icon)](https://jenkins.copystrike.dev/job/ugdocs-pipe/)
 
-![TeamCity build status](https://teamcity.copystrike.dev/app/rest/builds/buildType:id:UGDocs_Deploy/statusIcon.svg)
 
 UGDocs stands for Unauthenticated Google Docs.<br>
 
