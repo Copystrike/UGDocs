@@ -3,7 +3,7 @@
 [![Build Status](https://jenkins.copystrike.dev/buildStatus/icon?job=ugdocs-pipe)](https://jenkins.copystrike.dev/job/ugdocs-pipe/)
 
 
-UGDocs stands for Unauthenticated Google Docs.<br>
+UGDocs stands for Unauthenticated Google Docs. <br>
 
 Simpely this projects allows you to create a google docs without being authenticated... Wel not really, when setting up this project you will need to have access to a google account to give this app permissions, to create google documents on your behalf.
 
